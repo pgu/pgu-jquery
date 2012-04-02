@@ -1,0 +1,12 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+  <allow>
+    <convert converter="bean" match="pgu.domain.Person"/>
+    <create creator="new" javascript="AService">
+      <param name="class" value="pgu.service.AService"/>
+    </create>
+  </allow>
+</dwr>

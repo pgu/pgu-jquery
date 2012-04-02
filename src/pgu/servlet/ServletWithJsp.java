@@ -16,6 +16,7 @@ import pgu.domain.Product;
 /**
  * @see http://stackoverflow.com/tags/servlets/info
  * @see http://stackoverflow.com/tags/jstl/info
+ * @see http://localhost:8080/pgu-jquery/dwr/
  */
 @SuppressWarnings("serial")
 public class ServletWithJsp extends HttpServlet {
