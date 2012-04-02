@@ -3,15 +3,14 @@ package pgu.domain;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Person implements Serializable {
+public class Product implements Serializable {
 
     private String id;
-    private String name;
-    private int    age;
+    private String reference;
 
     @Override
     public String toString() {
-        return "Person [id=" + id + ", name=" + name + ", age=" + age + "]";
+        return "Product [id=" + id + ", reference=" + reference + "]";
     }
 
     @Override
@@ -33,7 +32,7 @@ public class Person implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Person other = (Person) obj;
+        final Product other = (Product) obj;
         if (id == null) {
             if (other.id != null) {
                 return false;
@@ -44,18 +43,13 @@ public class Person implements Serializable {
         return true;
     }
 
-    public Person id(final String id) {
+    public Product id(final String id) {
         setId(id);
         return this;
     }
 
-    public Person name(final String name) {
-        setName(name);
-        return this;
-    }
-
-    public Person age(final int age) {
-        setAge(age);
+    public Product reference(final String ref) {
+        setReference(ref);
         return this;
     }
 
@@ -67,20 +61,12 @@ public class Person implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getReference() {
+        return reference;
     }
 
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(final int age) {
-        this.age = age;
+    public void setReference(final String reference) {
+        this.reference = reference;
     }
 
 }
