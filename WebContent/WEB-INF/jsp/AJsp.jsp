@@ -4,6 +4,16 @@
 <html lang="en">
 <head>
 <title>Persons</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$("li").click(function() {
+		alert("Hello world!");
+	});
+	
+});
+</script>
 </head>
 <body>
 
