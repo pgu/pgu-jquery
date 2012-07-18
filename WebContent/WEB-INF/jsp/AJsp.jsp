@@ -46,5 +46,31 @@ function getPersons() {
     </div>
     <input type="button" value="Call DWR" onclick="getPersons()"></input>
     <div id="persons"></div>
+    <select class="variationCriterion">
+        <option value="uuuuuu">uu</option>
+        <option value="oooooo">oo</option>
+    </select>
+    <br/>
+    <select class="variationCriterion">
+        <option value="eeeeee">ee</option>
+        <option value="rrrrrr">rr</option>
+    </select>
+    <br/>
+    <select>
+        <option value="iiiiii">ii</option>
+        <option value="aaaaaa">aa</option>
+    </select>
+    
+<script type="text/javascript">
+$(".variationCriterion").change(function () {
+	console.log(this);
+	
+    var href = $(this).val();
+    if (href.indexOf("uu") != -1) {
+    	console.log("---> found!");
+	}	
+	
+});
+</script>
 </body>
 </html>
